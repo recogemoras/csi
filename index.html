@@ -331,20 +331,21 @@
 					</section>
 				</section>
 
+
 				<section>
 					<section>
 						<h2>Externalizando servicios</h2>
 
 						<aside class="notes">
 							xx:xx<br>
-							Nuestro SI era la crema: robusto, integrado, extensible... DIsponíamos de un servicio master al que se le integraban componentes.<br>
+							Nuestro SI era la crema: robusto, integrado, extensible... Disponíamos de un servicio master al que se le integraban componentes.<br>
 						</aside>
 					</section>
 
 					<section>
 						<h3>¡Montemos más máquinas!</h3>
 						<p>
-							Servicio -> Nueva máquina
+							¿Nuevo servicio? --> Nueva máquina ( física o virtualizada )
 						</p>
 
 						<aside class="notes">
@@ -356,14 +357,78 @@
 					</section>
 
 					<section>
-						<img class="no-background" src="http://www.nskinc.com/wp-content/uploads/2011/02/cloud-300x223.png"><br>
-						<small>WIP</small>
+						<img class="no-background" src="img/cloud.png"><br>
 
 						<aside class="notes">
 							xx:xx<br>
+							Decidimos basar nuestro sistema en cloud, usando servicios externos para la gestión de estos.<br>
+							Esto nos permitía aumentar la disponibilidad de los servicios, evitar el mantenimiendo de las máquinas,
+							ganar seguridad en cuanto al mantenimiento de datos y aumentar nuestras posibilidades en general.
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/aws.png"><br>
+
+						<aside class="notes">
+							xx:xx<br>
+							EMpezamos a usar instancias de AWS. Con ello pagábamos por lo que realmente usábamos.<br>
+							En algún momento podíamos tener picos de visitas ( torneos, promociones... ) y nos convenía
+							disponer de un poco más de proceso de cálculo en esos momentos.
+						</aside>
+					</section>
+
+					<section>
+						<h2>El por qué de todo esto</h2>
+
+						<p>
+							Preparar el sistema a los nuevos métodos de acceso.
+						</p>
+
+						<aside class="notes">
+							xx:xx<br>
+							Es complicado mantener la disponibilidad de un sistema usando máquinas propias.<br>
+							Si planteamos crear una app móvil, es necesario tener los recursos siempre a mano para
+							poder trabajar con los datos.<br>
+							Si la idea es ampliar los picos de visita, debemos poder asegurar una velocidad constante así como
+							no dejar de aumentar funcionalidad.
+						</aside>
+					</section>
+
+					<section>
+						<h4>kaikaku</h4>
+						<img class="fragment no-background" src="img/emerson.jpg">
+
+						<aside class="notes">
+							xx:xx<br>
+							Waldo Emerson, un pensador que incitó en todo momento el cambio y la mejora de lo existente.<br>
+							En ese momento teníamos dos opciones: seguir por el camino que estábamos llevando ( seguimos creciendo
+							sin control ) o cambiamos radicalmente para controlar nuestro cambio.<br>
+							Optamos por la segunda opción.
+						</aside>
+					</section>
+
+					<section>
+						<h2>¿Cómo lo mejoramos?</h2>
+
+						<p class="fragment">
+							Reduciendo instancias.
+						</p>
+
+						<p class="fragment">
+							Crear servicios para que integrar nuestro sistema con terceros.
+						</p>
+
+						<aside class="notes">
+							xx:xx<br>
+							Hasta ahora levantábamos instancias para cada servicio.<br>
+							No hubiese sido necesario si hubiesemos agrupado varios servicios en la misma instancia.<br>
+							La creación de APIs para que terceros integren sus sistemas con el nuestro ( eg. tiendas que organicen
+							eventos y necesiten nuestros datos de usuarios para registro o similar ).
 						</aside>
 					</section>
 				</section>
+
 
 				<section>
 					<section>
