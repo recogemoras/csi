@@ -54,31 +54,6 @@
 
 			<div class="slides">
 				<section>
-					<h2>People, habeis puesto notas muy largas que no caben en la pantalla!!!</h2>
-					<h4>Por favor cortarlas un poco.</h4>
-
-					<p>
-						No creo que las notas sea tal cual diremos las cosas, solo una guia.<br>
-						En caso de seguir viendo que no me caben las cortaré yo mismo y se joderá información.<br>
-
-						La de debajo de "los inicios".<br>
-						Nuestro primer SI<br>
-						La expansión<br>
-						Juegos propios<br>
-						Más tiendas<br>
-						Éxito<br>
-						Requiem<br>
-						TOrneos<br>
-						Éxito y cambio en la estrategia ( a parte en este quitar la imagen que no pinta nada )<br>
-						Problemas<br>
-						BBDD según la rae<br>
-						Cristian, quita las listas en las tuyas que no se ve nada<br>
-						Carlos, lo mismo<br>
-					</p>
-				</section>
-
-
-				<section>
 					<section>
 						<h1>Druids of the forest</h1>
 						<h3>La creación de un sistema de información propio</h3>
@@ -402,7 +377,7 @@
 				<section>
 					<section>
 						<h2>Éxito y cambio de la estrategia</h2>
-						<img src="img/change.png" style="background: none; border: none; box-shadow: none">
+
 						<aside class="notes">
 							Deberíamos estar en ??.<br>
 							Como os hemos dicho, Requiem arrasó. Tuvo un éxito mucho mayor del que nadie se esperaba, y nosotros fuimos los primeros
@@ -432,30 +407,30 @@
 				<section>
 					<section>
 						<h2>Modelando un SI</h2>
-
+							<p class="fragment"> Centralizar datos y automatizar procesos de negocio</p>
 						<aside class="notes">
-							xx:xx<br>
-							<p> Estudiamos posibilidades </p>
-							<p class="fragment"> ERP: homogeneidad datos, automatizar procesos de negocio</p>
+							Deberíamos estar en +00:00:45.<br>
 							<!-- long story: Nuestro sistema de información ya no cubría nuestras necesidades, y decidimos estudiar
-							qué posibilidades teníamos. Por lo que habíamos aprendido en la carrera, pensamos que seguramente nos 
-							interesaba tener un sistema de gestión empresarial (ERP). Resolvería nuestros problema principal, 
-							que eran la falta de homogeinad de los datos entre las tiendas, y nos ayudaría a automatizar parte de
-							nuestros procesos de negocio. -->
+							qué posibilidades teníamos. Por lo que habíamos aprendido en la carrera, pensamos que seguramente nos
+							interesaba tener un sistema de gestión empresarial (ERP). Resolvería nuestro problema principal,
+							que eran la falta de homogeinad de los datos entre las tiendas, y nos ayudaría a automatizar la parte
+							más operativa de nuestros procesos de negocio. -->
 						</aside>
 					</section>
 
 					<section>
 						<h2>Manipulando la economía</h2>
-
+						<p> ¿Comprar o desarrollar? </p>
 						<aside class="notes">
 							xx:xx<br>
-							<p> ¿Comprar o desarrollar? </p>
 							<p  class="fragment"> Módulo finanzas </p>
-							<!-- long story: Sabiendo que nuestra solución sería un ERP, había 2 opciones: comprar uno ya construido, e
+							<!-- long story: Otro problema importante que detectamos fue que perdíamos mucho tiempo para realizar
+							gestiones económicas y comunicarnos con la Administración, cuando debería ser sencillo ya que es un
+							proceso bastante repetitivo.
+							Sabiendo que nuestra solución sería un ERP, había 2 opciones: comprar uno ya construido e
 							implantarlo en nuestra empresa, o crearnos nuestra propia solución. Estuvimos estudiando los costes
 							que suponía comprar una solución ERP completa, y digamos que no se ajustaban para nada al presupuesto
-							de nuestra pequeña empresa. En cambio, comprar un módulo que gestionara las finanzas era mucho más 
+							de nuestra pequeña empresa. En cambio, comprar un módulo que gestionara las finanzas era mucho más
 							asumible y prácticamente no necesitaba personalización ya que estaba adaptado a las leyes de España,
 							así que nos decidimos por una solución intermedia: adquirir el módulo de finanzas y desarrollar nuestra
 							propia aplicación empresarial. -->
@@ -463,16 +438,22 @@
 					</section>
 
 					<section>
-						<h2>Generando un erp</h2>
-						<p  class="fragment"> Revisemos procesos de negocio - BPR </p>
+						<h2>Generando un ERP</h2>
+						<p  class="fragment"> Revisemos los procesos de negocio - BPR </p>
 						<aside class="notes">
 							xx:xx<br>
 							<!-- long story: Ok! Ya sabemos qué queremos hacer con nuestro sistema de información, ya hemos formado un
 							equipo de desarrolladores que lo implementarán, empezamos? No! Ya que íbamos a hacer un cambio tan grande
-							en la manera de trabajar de toda la empresa, era necesario parar a repensar cómo estábamos haciendo las 
+							en la manera de trabajar de toda la empresa, era necesario parar a repensar cómo estábamos haciendo las
 							cosas. Así que hicimos el esfuerzo de identificar nuestros procesos de negocio clave y ver de qué manera
 							podríamos mejorarlos, y para nuestra sorpresa descubrimos que muchos de ellos tenían redundancias y cosas
-							que no tenían sentido:  -->
+							muy mejorables: por poneros un ejemplo: Vimos que, cuando tocaba hacer un nuevo pedido, cada tienda
+							lo hacía por su cuenta, pidiendo los artículos que creía que necesitaba. Así que pensamos: no sería mejor
+							que las tiendas introdujeran en el sistema qué artículos querían pedir para el próximo envío y hacer la
+							compra de una vez, para todas las tiendas? De esta manera conseguimos 2 cosas: comprar de manera más
+							organizada y comprar más barato, porque como sabéis los proveedores ofrecen mejores precios cuanto más
+							les compras. Y así, proceso a proceso, fuimos revisándolos todos teniendo en cuenta las posibilidades
+							que nos ofrecía el ERP. -->
 						</aside>
 					</section>
 
@@ -480,19 +461,24 @@
 						<h2>Ganándose al cliente</h2>
 
 						<p class="fragment">
-							¡Ofertas!
+							¿Información?
 						</p>
 
 						<p class="fragment">
-							Promociones!
+							¡Promociones!
 						</p>
 
 						<aside class="notes">
 							xx:xx<br>
-							El cliente necesita sentirse valorado y la mejor manera de obtener esa sensación es ofreciendole
-							promociones, descuentos, ofertas, un lugar de ocio...<br>
-							Con nuestra targeta de cliente y nuestros códigos promocionales el cliente sabe que obtiene un beneficio
-							al comprar.
+							<!-- Una vez tuvimos las finanzas y los aspectos más operativos controlados, decidimos que nuestro 
+							siguiente objetivo era ganarnos al cliente. En ése momento nos dimos cuenta de que teníamos muy poca
+							información de nuestros consumidores. Si queríamos hacer mejoras como por ejemplo campañas de márketing
+							personalizadas a los gustos de los jugadores, necesitábamos saber qué es lo que más gustaba a cada 
+							cliente. Para saberlo, introducimos una nueva versión de la tarjeta de jugador: en lugar de ser un simple
+							identificador de plástico con un nombre, la nueva tarjeta tenía algo tan simple como un código de barras
+							que se tenía que marcar a cada compra, si es que se quería tener el descuento. De ésta manera, pudimos 
+							registrar qué estaba comprando cada jugador, y pudimos enviar publicidad mucho más concreta: descuentos
+							en su juego favorito, promociones de productos similares que le pudieran gustar, etc. -->
 						</aside>
 					</section>
 
@@ -500,14 +486,38 @@
 						<h2>Analizando al cliente</h2>
 
 						<p>
-							Asi que por el norte vendemos juegos de mesa y por el sur juegos de cartas...
+							Información es poder
+						</p>
+						<br>
+						<p class="fragment">
+							¡Retroalimentación!
+						</p>
+						<br>
+						<p class="fragment">
+							Información se convierte en producto
 						</p>
 
 						<aside class="notes">
 							xx:xx<br>
-							El hecho de registrar las ventas nos permite saber donde se compra un tipo de juego,
-							en qué cantidades se compran los juegos, en qué lugares interesan las promociones...<br>
-							Sabiendo esto, ¡se puede organizar un evento con una temática en un lugar específico!
+							Dónde funcionan mejor nuestros productos<br>
+							Falta de contacto con el cliente - Registrar torneos
+							<!-- Como estais empezando a ver, estábamos descubriendo que la información es poder, y se nos ocurrieron
+							nuevas maneras de aprovecharla: ahora podíamos identificar en qué zonas funcionaban mejor o peor nuestros
+							productos e intentar identificar el porqué. Y ahora os explicaremos uno de los grandes beneficios que nos
+							trajo el utilizar éstas técnicas de análisis de la información: Retroalimentación! Me explico: 
+							de un tiempo a esta parte la empresa había crecido y nosotros habíamos perdido algo muy valioso que 
+							antes podíamos ver en nuestra tiendecita de barrio: qué era lo que le gustaba a la gente. Qué aspectos de
+							nuestro juego les gustaban más y cuáles menos. Diseñar productos atractivos sin tener feedback es 
+							muy complicado. Y os preguntaréis, y cómo lo solucionasteis? Debatimos varias maneras de hacerlo, pero 
+							finalmente nos decantamos por registrar las listas de los productos que nuestros clientes utilizaban 
+							en los torneos. De ésta manera, nos podíamos hacer una idea muy clara de qué gustaba y qué no, dando una
+							información valiosísima a nuestro equipo creativo. 
+							Y por último, pero no por ello menos importante, decidimos hacer pública parte de ésta información que 
+							recogíamos de los torneos, de manera que los jugadores mismos podían saber qué estrategia había vencido
+							en la tienda de la ciudad de al lado. Éste concepto tan sencillo tuvo una acogida genial entre los 
+							jugadores y significó algo muy importante: estábamos haciendo que nuestro sistema de información
+							aportara valor en sí mismo.
+							-->
 						</aside>
 					</section>
 				</section>
@@ -515,7 +525,7 @@
 
 				<section>
 					<section>
-						<h2>BBDD</h2>
+						<h2>Mejorando la persistencia</h2>
 
 						<aside class="notes">
 							Deberíamos estar en ??.<br>
