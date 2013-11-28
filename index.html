@@ -423,7 +423,7 @@
 						<h2>Manipulando la economía</h2>
 						<p> ¿Comprar o desarrollar? </p>
 						<aside class="notes">
-							12:25<br>
+							11:35<br>
 							Problema finanzas<br>
 							ERP: 2 opciones<br>
 							Módulo finanzas + desarrollo a medida
@@ -444,7 +444,7 @@
 						<h2>Generando un ERP</h2>
 						<p  class="fragment"> Revisemos los procesos de negocio - BPR </p>
 						<aside class="notes">
-							14:35<br>
+							12:25<br>
 							Gran cambio<br>
 							Antes de nada, revisar procesos de negocio<br>
 							Ejemplo: pedidos conjuntos para todas tiendas zona
@@ -475,7 +475,7 @@
 						</p>
 
 						<aside class="notes">
-							15:55<br>
+							14:00<br>
 							Campañas márketing personalizadas?<br>
 							Falta información!<br>
 							Nueva Tarjeta con código de barras
@@ -507,7 +507,7 @@
 						</p>
 
 						<aside class="notes">
-							18:25<br>
+							15:10<br>
 							Dónde funcionan mejor nuestros productos<br>
 							Falta de contacto con el cliente - Registrar torneos<br>
 							Información de los torneos pública -> nuevo producto, valor a partir de SI
@@ -538,7 +538,7 @@
 						<h2>Mejorando la persistencia</h2>
 
 						<aside class="notes">
-							Deberíamos estar en ??.<br>
+							17:40<br>
 						</aside>
 					</section>
 
@@ -551,7 +551,7 @@
 						</p>
 
 						<aside class="notes">
-							Deberíamos estar en ??.<br>
+							18:40<br>
 							Es un concepto muy bonito el de base de datos, al menos según la Real Academia de la Lengua Española.<br>
 							Nosotros disponíamos de un conjunto de datos, en cierta manera estaba organizado - a nuestra manera - y podíamos obtener con relativa rapidez diversos tipos de información. Técnicamnete lo estábamos haciendo bien... bueno, "técnicamente".<br>
 							"Técnicamente" es otro término interesante, pero no vamos a entrar en ello. La cuestión es que, nos estábamos ciñendo a la definición de base de datos, pero lo que teníamos era un desastre.<br>
@@ -562,7 +562,7 @@
 						<img class="no-background" src="img/excelLogo.png">
 
 						<aside class="notes">
-							Deberíamos estar en +00:00:45.<br>
+							19:25<br>
 							Comenzamos usando excel, era una manera muy fácil de mantener un estándar en cuanto a formato y enviárnoslo.
 						</aside>
 					</section>
@@ -571,7 +571,7 @@
 						<img class="no-background" src="img/googleDocsLogo.png">
 
 						<aside class="notes">
-							Deberíamos estar en +00:00:10.<br>
+							19:35<br>
 							Luego con google docs, cosa que nos facilitó la compartición de los documentos y podíamos seguir manteniendo los formatos de excel que habíamos usado hasta el momento.
 						</aside>
 					</section>
@@ -580,7 +580,7 @@
 						<img class="no-background" src="img/bbdd.png">
 
 						<aside class="notes">
-							Deberíamos estar en +00:00:13.<br>
+							19.45<br>
 							Además de nuestra pequeña base de datos relacional, no nos podemos olvidar de ella! La usábamos básicmanete para ventas y para el pequeño programa de gestión que usábamos.
 						</aside>
 					</section>
@@ -588,7 +588,7 @@
 					<section>
 						<h1>HECATOMBE<h1>
 						<aside class="notes">
-							Deberíamos estar en +00:00:10.<br>
+							19:55<br>
 							Básicamente, teníamos a nuestra plena disposición CAOS.<br>
 							-- Poner la pantalla en negro "b" --
 							Era el momento en que necesitábamos cambiar definitivamente. Ya no solo en cuanto a cómo almacenar los datos, pero era sin duda algo que nos estaba perjudicando.<br>
@@ -600,9 +600,8 @@
 						<img class="no-background" src="img/mongoLogo.png">
 
 						<aside class="notes">
-							Deberíamos estar en +00:00:26.<br>
+							20:20<br>
 							Tras investigar decidimos que MongoDB - BBDD NoSQL Documental - era el modelo que más facilidades nos podía proporcionar tanto en el presente como en el futuro y es la que consideramos para el plan de acción de remodelar la estructura de datos.<br>
-							+00:00:18
 						</aside>
 					</section>
 				</section>
@@ -613,7 +612,7 @@
 						<h2>Externalizando servicios</h2>
 
 						<aside class="notes">
-							xx:xx<br>
+							20:45<br>
 							Nuestro SI era la crema: robusto, integrado, extensible... Disponíamos de un servicio master al que se le integraban componentes.<br>
 						</aside>
 					</section>
@@ -626,7 +625,7 @@
 						</p>
 
 						<aside class="notes">
-							xx:xx<br>
+							21:15<br>
 							Con el afán de mantener la independéncia de servicios, cada nueva característica en nuestro sistema implicaba una máquina ( física o virtual ).<br>
 							Esto incrementaba el mantenimiento, reducía el rendimiento, necesitábamos un mayor control de nuestros procesos IT...<br>
 							Una fallada podía crear el caos en nuestros servicios.
@@ -637,7 +636,7 @@
 						<img class="no-background" src="img/cloud.png"><br>
 
 						<aside class="notes">
-							xx:xx<br>
+							21:45<br>
 							Decidimos basar nuestro sistema en cloud, usando servicios externos para la gestión de estos.<br>
 							Esto nos permitía aumentar la disponibilidad de los servicios, evitar el mantenimiendo de las máquinas,
 							ganar seguridad en cuanto al mantenimiento de datos y aumentar nuestras posibilidades en general.
@@ -648,7 +647,7 @@
 						<img class="no-background" src="img/aws.png"><br>
 
 						<aside class="notes">
-							xx:xx<br>
+							22:35<br>
 							EMpezamos a usar instancias de AWS. Con ello pagábamos por lo que realmente usábamos.<br>
 							En algún momento podíamos tener picos de visitas ( torneos, promociones... ) y nos convenía
 							disponer de un poco más de proceso de cálculo en esos momentos.
@@ -663,35 +662,12 @@
 						</p>
 
 						<aside class="notes">
-							xx:xx<br>
+							23:35<br>
 							Es complicado mantener la disponibilidad de un sistema usando máquinas propias.<br>
 							Si planteamos crear una app móvil, es necesario tener los recursos siempre a mano para
 							poder trabajar con los datos.<br>
 							Si la idea es ampliar los picos de visita, debemos poder asegurar una velocidad constante así como
 							no dejar de aumentar funcionalidad.
-						</aside>
-					</section>
-
-					<section>
-						<h2>"kaikaku"</h2>
-
-						<aside class="notes">
-							xx:xx<br>
-							Es un concepto japonés muy ligado al "kaizen".<br>
-							El kaizen representa la mejora continua con pequeños cambios en una organización o individuo.<br>
-							El kaikaku en cambio, representa la mejora radical con el cambio radical en una organización.
-						</aside>
-					</section>
-
-					<section>
-						<img class="no-background" src="img/emerson.jpg">
-
-						<aside class="notes">
-							xx:xx<br>
-							Waldo Emerson, un pensador que incitó en todo momento el cambio y la mejora de lo existente.<br>
-							En ese momento teníamos dos opciones: seguir por el camino que estábamos llevando ( seguimos creciendo
-							sin control ) o cambiamos radicalmente para controlar nuestro cambio.<br>
-							Optamos por la segunda opción.
 						</aside>
 					</section>
 
@@ -707,7 +683,7 @@
 						</p>
 
 						<aside class="notes">
-							xx:xx<br>
+							24:35<br>
 							Hasta ahora levantábamos instancias para cada servicio.<br>
 							No hubiese sido necesario si hubiesemos agrupado varios servicios en la misma instancia.<br>
 							La creación de APIs para que terceros integren sus sistemas con el nuestro ( eg. tiendas que organicen
