@@ -538,7 +538,7 @@
 						<h2>Mejorando la persistencia</h2>
 
 						<aside class="notes">
-							17:40<br>
+							17:35<br>
 						</aside>
 					</section>
 
@@ -551,7 +551,7 @@
 						</p>
 
 						<aside class="notes">
-							18:40<br>
+							17:40<br>
 							Es un concepto muy bonito el de base de datos, al menos según la Real Academia de la Lengua Española.<br>
 							Nosotros disponíamos de un conjunto de datos, en cierta manera estaba organizado - a nuestra manera - y podíamos obtener con relativa rapidez diversos tipos de información. Técnicamnete lo estábamos haciendo bien... bueno, "técnicamente".<br>
 							"Técnicamente" es otro término interesante, pero no vamos a entrar en ello. La cuestión es que, nos estábamos ciñendo a la definición de base de datos, pero lo que teníamos era un desastre.<br>
@@ -562,7 +562,7 @@
 						<img class="no-background" src="img/excelLogo.png">
 
 						<aside class="notes">
-							19:25<br>
+							18:25<br>
 							Comenzamos usando excel, era una manera muy fácil de mantener un estándar en cuanto a formato y enviárnoslo.
 						</aside>
 					</section>
@@ -571,7 +571,7 @@
 						<img class="no-background" src="img/googleDocsLogo.png">
 
 						<aside class="notes">
-							19:35<br>
+							18:35<br>
 							Luego con google docs, cosa que nos facilitó la compartición de los documentos y podíamos seguir manteniendo los formatos de excel que habíamos usado hasta el momento.
 						</aside>
 					</section>
@@ -580,7 +580,7 @@
 						<img class="no-background" src="img/bbdd.png">
 
 						<aside class="notes">
-							19.45<br>
+							18.45<br>
 							Además de nuestra pequeña base de datos relacional, no nos podemos olvidar de ella! La usábamos básicmanete para ventas y para el pequeño programa de gestión que usábamos.
 						</aside>
 					</section>
@@ -588,7 +588,7 @@
 					<section>
 						<h1>HECATOMBE<h1>
 						<aside class="notes">
-							19:55<br>
+							18:55<br>
 							Básicamente, teníamos a nuestra plena disposición CAOS.<br>
 							-- Poner la pantalla en negro "b" --
 							Era el momento en que necesitábamos cambiar definitivamente. Ya no solo en cuanto a cómo almacenar los datos, pero era sin duda algo que nos estaba perjudicando.<br>
@@ -600,7 +600,7 @@
 						<img class="no-background" src="img/mongoLogo.png">
 
 						<aside class="notes">
-							20:20<br>
+							19:20<br>
 							Tras investigar decidimos que MongoDB - BBDD NoSQL Documental - era el modelo que más facilidades nos podía proporcionar tanto en el presente como en el futuro y es la que consideramos para el plan de acción de remodelar la estructura de datos.<br>
 						</aside>
 					</section>
@@ -612,7 +612,7 @@
 						<h2>Externalizando servicios</h2>
 
 						<aside class="notes">
-							20:45<br>
+							19:45<br>
 							Nuestro SI era la crema: robusto, integrado, extensible... Disponíamos de un servicio master al que se le integraban componentes.<br>
 						</aside>
 					</section>
@@ -625,7 +625,7 @@
 						</p>
 
 						<aside class="notes">
-							21:15<br>
+							20:15<br>
 							Con el afán de mantener la independéncia de servicios, cada nueva característica en nuestro sistema implicaba una máquina ( física o virtual ).<br>
 							Esto incrementaba el mantenimiento, reducía el rendimiento, necesitábamos un mayor control de nuestros procesos IT...<br>
 							Una fallada podía crear el caos en nuestros servicios.
@@ -636,7 +636,7 @@
 						<img class="no-background" src="img/cloud.png"><br>
 
 						<aside class="notes">
-							21:45<br>
+							20:45<br>
 							Decidimos basar nuestro sistema en cloud, usando servicios externos para la gestión de estos.<br>
 							Esto nos permitía aumentar la disponibilidad de los servicios, evitar el mantenimiendo de las máquinas,
 							ganar seguridad en cuanto al mantenimiento de datos y aumentar nuestras posibilidades en general.
@@ -647,7 +647,7 @@
 						<img class="no-background" src="img/aws.png"><br>
 
 						<aside class="notes">
-							22:35<br>
+							21:35<br>
 							EMpezamos a usar instancias de AWS. Con ello pagábamos por lo que realmente usábamos.<br>
 							En algún momento podíamos tener picos de visitas ( torneos, promociones... ) y nos convenía
 							disponer de un poco más de proceso de cálculo en esos momentos.
@@ -662,7 +662,7 @@
 						</p>
 
 						<aside class="notes">
-							23:35<br>
+							22:35<br>
 							Es complicado mantener la disponibilidad de un sistema usando máquinas propias.<br>
 							Si planteamos crear una app móvil, es necesario tener los recursos siempre a mano para
 							poder trabajar con los datos.<br>
@@ -683,7 +683,7 @@
 						</p>
 
 						<aside class="notes">
-							24:35<br>
+							23:35<br>
 							Hasta ahora levantábamos instancias para cada servicio.<br>
 							No hubiese sido necesario si hubiesemos agrupado varios servicios en la misma instancia.<br>
 							La creación de APIs para que terceros integren sus sistemas con el nuestro ( eg. tiendas que organicen
@@ -692,14 +692,15 @@
 					</section>
 				</section>
 
-
+				<!-- Eliminada por falta de tiempo -->
+				<!-- 
 				<section>
 					<section>
 						<h2>Renovar la Estrategia de Marketing</h2>
 						<h3 class="fragment"> Apostando por... </h3>
 
 						<aside class="notes">
-							24:50<br>
+							23:50<br>
 							Nuestro marketing era pobre así que habia que renovarlo apostando por...
 						</aside>
 					</section>
@@ -712,7 +713,7 @@
 						<img class="no-background" width="300" height="300" src="img/mailchimp.png">
 
 						<aside class="notes">
-							25:30<br>
+							24:30<br>
 							Creamos una Newsletter <br>
 							Personalizada al cliente. <br>
 							Novedades. <br>
@@ -728,7 +729,7 @@
 						<img class="no-background" src="img/play.png" width="434" height="100">
 
 						<aside class="notes">
-							25:55<br>
+							24:55<br>
 							Esta hecha pero no publicada!
 							<b>Punto de encuentro Empresa-Cliente</b> <br>
 							Perfil de jugador<br>
@@ -744,7 +745,7 @@
 						<img class="no-background" src="img/QR.jpg" width="275" height="275">
 
 						<aside class="notes">
-							26:15<br>
+							25:15<br>
 							Se crean cuando esté publicada la App.<br>
 								Descargas de las Apps<br>
 								Login en torneos
@@ -756,7 +757,7 @@
 						<img class="no-background" src="img/twitterLogo.png" width="195" height="195">
 
 						<aside class="notes">
-							26:55<br>
+							25:55<br>
 
 							<b> Objetivo: Aumentar los Prescriptores</b>
 								Contenido nuevo: <br>
@@ -779,7 +780,7 @@
 					</section>
 
 				</section>
-
+				-->
 
 				<section>
 					<section>
@@ -794,7 +795,7 @@
 						<img class="no-background" src="img/devirLogo.jpg">
 
 						<aside class ="notes">
-							27:15
+							23:50
 							Creación y Venta de juegos de mesa<br>
 							Distribución a otras tiendas<br>
 							Tienda online<br>
@@ -839,7 +840,7 @@
 						<h2>Nuestras ventajas competitivas</h2>
 						<aside class="notes">
 							Nuestra ventaja competitiva principal es la <b>Tarjeta de Socio</b> y nuestro juego estrella <b>Requiem</b>
-							27:20
+							24:55
 						</aside>
 					</section>
 				</section>
@@ -849,7 +850,7 @@
 						<h2>La moraleja de todo esto</h2>
 
 						<aside class="notes">
-							27:40 tardo 0:15<br>
+							24:15 tardo 0:15<br>
 							Veamos el detalle de hacer un sistema nuevo.<br>
 							A priori puede no tener sentido, pero realmente lo tiene:
 						</aside>
@@ -863,7 +864,7 @@
 						</p>
 
 						<aside class="notes">
-							27:55 tardo 1:00<br>
+							24:30 tardo 1:00<br>
 							Puede verse como algo estupido, el hecho de crear cosas que ya existen, aunque realmente no estamos copiando,
 							estamos haciendo algo nuevo: integrando todos los servicios en nuestro sistema.<br>
 							Con los sistemas existentes... ¿Cómo integraríamos una aplicación hecha por nosotros mismos?<br>
@@ -883,7 +884,7 @@
 						</p>
 
 						<aside class="notes">
-							28:55 me tiro 1:00<br>
+							25:30 me tiro 1:00<br>
 							Para llegar al éxito debemos alinear estrategias... Pero siempre se da por hecho que la estrategia tecnológica
 							viene a ser implantar un sistema comprado. ¿Por qué no incluir en el paquete el hecho de crear un sistema, mas
 							aún sabiendo que es algo completamente nuevo?
@@ -906,7 +907,7 @@
 						</p>
 
 						<aside class="notes">
-							29:55 tardo 1:20<br>
+							26:30 tardo 1:20<br>
 							Esto no implica que no hayamos tenido problemas...<br>
 							Tiempo, funcionaldades no acabadas y mantenimiento.
 						</aside>
@@ -928,7 +929,7 @@
 						</p>
 
 						<aside class="notes">
-							30:15 tardo 0:45<br>
+							26:50 tardo 0:45<br>
 							No todo son problemas.
 							El usuario del sistema habla directamente con quien lo crea.<br>
 							Este crece cuando lo necesitamos.<br>
@@ -956,7 +957,7 @@
 						</p>
 
 						<aside class="notes">
-							31:00 tardo 1:00<br>
+							27:35 tardo 1:00<br>
 							No es facil mantener un sistema.<br>
 							Pero si es beneficioso, en terminos de funcionalidad y monetarios.<br>
 							Nos conocen por hacer algo diferente.<br>
@@ -968,7 +969,7 @@
 				<section data-background="#8c4738">
 					<h2>¡Gracias!</h2>
 					<aside class="notes">
-							32:00<br>
+							29:35<br>
 						</aside>
 				</section>
 			</div>
