@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Druids of the Forest</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -28,326 +28,922 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<style type="text/css">
+			.logo {
+				width: 120px;
+				height: 111px;
+				position: absolute;
+				background: url( 'img/logo_120_111.png' ) no-repeat;
+				top: 10px;
+				left: 10px;
+			}
+
+			.no-background {
+				background: none !important;
+				border: none !important;
+				box-shadow: none !important;
+			}
+
+		</style>
 	</head>
 
 	<body>
-
 		<div class="reveal">
+			<div class="logo"></div>
 
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
 					<section>
-						<h2>Vertical Slides</h2>
+						<h1>Druids of the forest</h1>
+						<h3>La creación de un sistema de información propio</h3>
+
 						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
+							<small>Carlos Person</small><br>
+							<small>Cristian Martín-Blas</small><br>
+							<small>Eric López</small><br>
+							<small>Maria Josep Rodríguez</small><br>
 						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon.css#/themes">Moon</a> -
-						<a href="?theme=simple.css#/themes">Simple</a> -
-						<a href="?theme=solarized.css#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
 
 						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
+							Presentación<br>
+							Se muestra el "menú para hoy", apretando ESC y recorriendo las "top slides".
 						</aside>
 					</section>
+				</section>
+
+
+				<section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<h2>¿Quiénes somos?</h2>
+					</section>
+
+					<section>
+						<p>
+							Nuestro objetivo es dar a conocer el entretenimiento colectivo a través de los juegos de rol.
+						</p>
+
+						<p>
+							Fundamos en 2007 con el propósito de cambiar la perspectiva del entretenimiento.
+						</p>
+
+						<aside class="notes">
+							0:25<br>
+							El estado en el que estaban los juegos de mesa ( enemistad, poco conocimiento en general... ).<br>
+							Nos conocimos en la universidad, nos cansamos de los juegos de siempre, decidimos emprender.
+						</aside>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Los inicios</h2>
+					</section>
+
+					<section>
+						<p class="fragment">
+							Pequeño establecimiento
+						</p>
+
+						<p class="fragment">
+							Poco dinero, mucha ilusión
+						</p>
+
+						<p class="fragment">
+							¡Muy poco tiempo!
+						</p>
+
+						<aside class="notes">
+							1:10<br>
+							Estudiantes recién titulados<br>
+							Muchas ideas! <br>
+							Poco dinero... <br>
+							Abrimos primera tienda<br>
+							Vendiamos juegos de rol y parecido<br>
+							La gente iba a jugar<br>
+							<!--Éramos cuatro estudiantes recién titulados, con lo que podreis imaginar que teníamos muchas ideas,
+							mucha ilusión... y muy, muy poco dinero. De alguna manera (mayormente endeudándonos con todo el mundo)
+							nos las arreglamos para abrir nuestra primera tienda. En ella vendíamos juegos de rol y productos
+							relacionados, y los clientes tenían un espacio en el que reunirse y jugar. La cosa funcionó
+							bastante bien. -->
+						</aside>
+					</section>
+
+
+					<section>
+						<h3>Nuestro primer sistema de información</h3>
+
+						<p class="fragment">
+							<img class="no-background" src="img/excelLogo.png" height="256px">
+							<img class="no-background" src="img/dropboxLogo.png">
+						</p>
+
+						<p class="fragment">
+							Funcionalidad adecuada
+						</p>
+
+						<p class="fragment">
+							Facilidad de uso
+						</p>
+
+						<p class="fragment">
+							¡Solución rápida!
+						</p>
+
+						<aside class="notes">
+							1:40<br>
+							¿Como guardamos la información?<br>
+							¿Organización?<br>
+							Excel!<br>
+							Era sencillo, pero perfecto para lo que necesitabamos<br>
+							Dropbox para compartir<br>
+							Funcionó todo durante un tiempo...<br>
+							<!--Y os preguntaréis, cómo guardabais la información? Cómo os organizabais entre vosotros? Bien, pues
+							utilizábamos un programa de gestión de cálculos muy útil del que puede que hayáis oído hablar.
+							[Se muestra la imagen de Excel] Excel! Puede que os parezca extraño o inadecuado, pero no! En aquél momento era
+							exactamente lo que necesitábamos: nos servía para cuadrar los presupuestos y organizar nuestra contabilidad,
+							teníamos experiencia en su uso, con lo que la curva de aprendizaje fue nula, y sobretodo, teníamos muy poco
+							tiempo y era la solución más rápida. En cuanto a la compartición y copias de seguridad de los datos,
+							ocurrió lo mismo: Dropbox nos ofrecía una solución rápida y efectiva, y funcionó perfectamente durante un tiempo.-->
+						</aside>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>La expansión</h2>
+
+						<p class="fragment">
+							Conocemos el sector...
+						</p>
+
+						<h3 class="fragment">¡Mejorémoslo!</h3>
+
+						<aside class="notes">
+							2:25<br>
+							Objetivo: Gente jugara a NUESTROS juegos <br>
+							Experiencia como jugadores en juegos exitosos<br>
+							Muchas ideas y ganas<br>
+							<!-- Pero nosotros teníamos muy claro lo que queríamos. Nosotros queríamos que la gente jugara a NUESTROS juegos.
+							Lo que al principio parecía una idea disparatada, pronto pasó a ser factible: reuníamos las condiciones
+							necesarias para iniciar nuestra aventura en el diseño de juegos, o eso creíamos: teníamos experiencia
+							como jugadores en muchos de los juegos más exitosos del momento, muchas ideas sobre como hacer juegos
+							divertidos y, por encima de todo, las ganas y la ilusión de crear nuestros propios productos. -->
+						</aside>
+					</section>
+
+					<section>
+						<h2>¡Juegos propios!</h2>
+
+						<img class="fragment no-background" src="img/elHobbit.png">
+
+						<aside class="notes">
+							2:45<br>
+							Empezamos creando juegos nuevos cada 2 meses<br>
+							Desarrollados en ratos libres -> Baratos de crear <br>
+							Eran sencillos, pero entretenidos<br>
+							Por el feedback los ibamos mejorando<br>
+							Ganamos popularidad<br>
+							<!-- Así pues, nos pusimos manos a la obra: cada dos meses aproximadamente poníamos a la venta un nuevo
+							juego de factura propia. Estos juegos se diseñaban básicamente en nuestros ratos libres, así que
+							nos salían relativamente baratos de desarrollar. Sin embargo, como comprenderéis, no tenían una
+							complejidad demasiado elevada, pero sí que tenían algo bueno: eran entretenidos. Como los vendíamos en
+							nuestra propia tienda, veíamos si los jugadores los disfrutaban, y de qué se quejaban, así que cada
+							juego intentaba solucionar los problemas del previo, con lo que la calidad de los juegos fue en aumento
+							y se nos empezó a conocer por la zona. -->
+						</aside>
+					</section>
+
+					<section>
+						<h2>Producto propio</h2>
+						<p class="fragment">
+							Juegos sencillos
+						</p>
+
+						<p class="fragment">
+							Venta exclusiva en tienda
+						</p>
+
+						<p class="fragment">
+							¡Más beneficios!
+						</p>
+
+						<img class="fragment no-background" src="img/dollar.png">
+					</section>
+
+					<section>
+						<h2>Más tiendas</h2>
+
+						<p class="fragment">
+							El negocio crece
+						</p>
+
+						<p class="fragment">
+							Nuevos obstáculos
+						</p>
+
+						<p class="fragment">
+							Nuevas obligaciones como dueños
+						</p>
+
+						<p class="fragment">
+							... pero más tiempo para diseñar
+						</p>
+
+						<aside class="notes">
+							3:35<br>
+							Abrimos más tiendas por necesidad<br>
+							Más personal<br>
+							Mas tiempo para crear juegos<br>
+							Mejoramos en la creación de juegos<br>
+							<!-- La tienda cada vez se nos hacía más pequeña, así que eventualmente abrimos una, y otra, y otra más,
+							contratando a nuevo personal e intentando que nuestras tiendas tuvieran	una identidad concreta.
+							Como dueños, ésto nos dio muchos quebraderos de cabeza, pero a la vez nos permitió delegar parte de
+							nuestras antiguas responsabilidades para concentrarnos en lo que mejor se nos daba y más nos gustaba:
+							el diseño de juegos. Por lo tanto, nuestra capacidad como diseñadores fue mejorando cada vez más. -->
+						</aside>
+					</section>
+
+					<section>
+						<h2>Éxito</h2>
+
+						<p>
+							¡Buena aceptación!
+						</p>
+
+						<p>
+							... casi siempre
+						</p>
+
+						<p>
+							Lo estamos haciendo bien pero... ¿ahora qué?
+						</p>
+
+						<aside class="notes">
+							4:05<br>
+							Varias tiendas, buenas ventas, y juegos divertidos<br>
+							Juegos sencillos -> Poca continuidad de los clientes<br>
+							Se nos acababan las ideas<br>
+							Decidimos crear un juego divertido y profundo<br>
+							Nació Requiem!<br>
+							<!-- Perfecto, tenemos varias tiendas, vendemos productos externos y propios, nuestros juegos "casi siempre"
+							gustan y nuestros clientes están contentos... Está genial, lo hemos conseguido, no? Pero ¿y ahora qué?
+							Veréis, como os hemos comentado, los juegos que diseñábamos eran juegos divertidos, sencillos y de poca
+							profundidad. Vendían bien, pero	tenían poca continuidad. La gente los jugaba y se divertían, pero al poco
+							tiempo perdían la gracia. Y poco a poco, nosotros estábamos quedándonos sin ideas para juegos de ése estilo.
+							Queríamos hacer	algo grande, algo que gustara a los jugadores y a la vez fuera lo suficientemente profundo como para
+							engancharlos, algo que pudiéramos ir ampliando con el tiempo, queríamos un super éxito. Y así nació Requiem. -->
+						</aside>
 					</section>
 				</section>
 
 				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
+					<section>
+						<h2>Requiem</h2>
+						<p class="fragment">Calidad</p>
+						<p class="fragment">Colaborativo</p>
+						<p class="fragment">Competitivo</p>
+						<aside class="notes">
+							4:40<br>
+							El desarrollo de Requiem fue mucho más largo que el de nuestros anteriores juegos, y pusimos muchos más recursos
+							en él que en cualquier otro.
+							Nuestra experiencia como jugadores y posteriormente como diseñadores nos había permitido identificar las
+							carencias de los juegos más jugados del momento: algunos eran demasiado sencillos, otros eran muy complicados,
+							caros, con poca	profundidad, ambientación pobre... Así, identificando gracias a nuestros clientes cuáles eran
+							los problemas de nuestros anteriores juegos, decidimos apostar por diseñar un juego más ambicioso que cualquiera
+							que	hubieramos hecho hasta la fecha: profundo, con una estética atractiva, fácil de entender pero difícil de
+							dominar... y que tuviera una diferencia importante con el resto de competidores: que pudiera jugarse tanto
+							colaborativamente como competitivamente.
+						</aside>
+					</section>
+
+					<section>
+						<h2>Torneos</h2>
+						<img src="img/trophy1.png" style="background: none; border: none; box-shadow: none">
+						<aside class="notes">
+							5:40<br>
+							Paralelamente al desarrollo de Requiem, decidimos introducir un punto clave en la evolución de la empresa: los torneos.
+							Ideamos un sistema de torneos por el que los jugadores serían recompensados por sus victorias con cartas exclusivas y
+							vales canjeables en la tienda. Éste concepto, que parece tan simple, fue el detonante del gran éxito que tuvo Requiem,
+							porque la gente se enganchó! Los jugadores ideaban nuevas estrategias para vencer a su amigo y para jugar colaborativamente
+							con tal de ser los mejores.
+						</aside>
+					</section>
+
+					<section>
+						<h2>Tarjeta de Socio</h2>
+						<img src="img/customerCard.png">
+						<aside class="notes">
+							6:15<br>
+							Además, inicialmente para dar apoyo a los torneos en la identificación de los jugadores, decidimos crear tarjetas de
+							socio para nuestros jugadores. Con ellas ofrecíamos descuentos en las compras de nuestros productos para cumplir 2
+							objetivos claros: fidelizar a nuestros clientes, e incentivar su uso para conseguir obtener información de los mismos.
+						</aside>
+					</section>
 				</section>
 
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
+					<section>
+						<h2>Éxito y cambio de la estrategia</h2>
+						<aside class="notes">
+							6:40<br>
+							Como os hemos dicho, Requiem arrasó. Tuvo un éxito mucho mayor del que nadie se esperaba, y nosotros fuimos los primeros
+							sorprendidos. Las tiendas estaban llenas de gente, y además estaban jugando a nuestro juego! Parecía mentira. Sobra decir
+							que los beneficios de Requiem fueron altísimos. Lo tuvimos claro: nuestra empresa acababa de cambiar de estrategia,
+							a partir de ése momento la venta de juegos de otros fabricantes pasaba a un segundo plano, y el diseño de juegos de rol
+							de mesa competitivos y de calidad sería nuestro sello distintivo, con Requiem sería nuestro principal abanderado.
+						</aside>
+					</section>
+
+					<section>
+						<h2>Problemas...</h2>
+						<img src="img/fireHose.png" style="background: none; border: none; box-shadow: none">
+						<aside class="notes">
+							7:25<br>
+							Pero había un problema, que con el tiempo se había ido acrecentando, y que con la revolución que suposo Requiem se hizo
+							más patente aún: nuestro sistema de información era un caos. Empezaba a quedar muy claro que Drive y Dropbox se nos
+							habían quedado muy, muy pequeños: tener tantas tiendas trabajando juntas hacía que hubieran errores en los registros de
+							ventas y en la realización de pedidos. Este desbarajuste nos trajo problemas importantes, como falta de stock, pérdidas
+							de registros de jugadores (que también se almacenaban en Drive) y una dispersión enorme de la información que hacía que
+							hacer estadísticas de cosas como la evolución de las ventas durante el mes se convirtieran en tareas muy, muy lentas.
+							Estaba claro que necesitábamos un cambio.<br>
+							+00:00:55
+						</aside>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Modelando un SI</h2>
+							<p class="fragment"> Centralizar datos y automatizar procesos de negocio</p>
+						<aside class="notes">
+							7:50<br>
+							Problemas: dispersión datos y tareas repetitivas
+							<!-- long story: Nuestro sistema de información ya no cubría nuestras necesidades, y decidimos estudiar
+							qué posibilidades teníamos. Por lo que habíamos aprendido en la carrera, pensamos que seguramente nos
+							interesaba tener un sistema de gestión empresarial (ERP). Resolvería nuestro problema principal,
+							que eran la falta de homogeinad de los datos entre las tiendas, y nos ayudaría a automatizar la parte
+							más operativa de nuestros procesos de negocio. -->
+						</aside>
+					</section>
+
+					<section>
+						<h2>Manipulando la economía</h2>
+						<p> ¿Comprar o desarrollar? </p>
+						<aside class="notes">
+							8:40<br>
+							Problema finanzas<br>
+							ERP: 2 opciones<br>
+							Módulo finanzas + desarrollo a medida
+							<!-- long story: Otro problema importante que detectamos fue que perdíamos mucho tiempo para realizar
+							gestiones económicas, controlar nóminas y comunicarnos con la Administración, cuando debería ser
+							sencillo ya que es un proceso bastante repetitivo.
+							Sabiendo que nuestra solución sería un ERP, había 2 opciones: comprar uno ya construido e
+							implantarlo en nuestra empresa, o crearnos nuestra propia solución. Estuvimos estudiando los costes
+							que suponía comprar una solución ERP completa, y digamos que no se ajustaban para nada al presupuesto
+							de nuestra pequeña empresa. En cambio, comprar un módulo que gestionara las finanzas era mucho más
+							asumible y prácticamente no necesitaba personalización ya que estaba adaptado a las leyes de España,
+							así que nos decidimos por una solución intermedia: adquirir el módulo de finanzas y desarrollar nuestra
+							propia aplicación empresarial. -->
+						</aside>
+					</section>
+
+					<section>
+						<h2>Generando un ERP</h2>
+						<p  class="fragment"> Revisemos los procesos de negocio - BPR </p>
+						<aside class="notes">
+							9:30<br>
+							Gran cambio<br>
+							Antes de nada, revisar procesos de negocio<br>
+							Ejemplo: pedidos conjuntos para todas tiendas zona
+							<!-- long story: Ok! Ya sabemos qué queremos hacer con nuestro sistema de información, ya hemos formado un
+							equipo de desarrolladores que lo implementarán, empezamos? No! Ya que íbamos a hacer un cambio tan grande
+							en la manera de trabajar de toda la empresa, era necesario parar a repensar cómo estábamos haciendo las
+							cosas. Así que hicimos el esfuerzo de identificar nuestros procesos de negocio clave y ver de qué manera
+							podríamos mejorarlos, y para nuestra sorpresa descubrimos que muchos de ellos tenían redundancias y cosas
+							muy mejorables: por poneros un ejemplo: Vimos que, cuando tocaba hacer un nuevo pedido, cada tienda
+							lo hacía por su cuenta, pidiendo los artículos que creía que necesitaba. Así que pensamos: no sería mejor
+							que las tiendas introdujeran en el sistema qué artículos querían pedir para el próximo envío y hacer la
+							compra de una vez, para todas las tiendas? De esta manera conseguimos 2 cosas: comprar de manera más
+							organizada y comprar más barato, porque como sabéis los proveedores ofrecen mejores precios cuanto más
+							les compras. Y así, proceso a proceso, fuimos revisándolos todos teniendo en cuenta las posibilidades
+							que nos ofrecía el ERP. -->
+						</aside>
+					</section>
+
+					<section>
+						<h2>Ganándose al cliente</h2>
+
+						<p class="fragment">
+							¿Información?
+						</p>
+
+						<p class="fragment">
+							¡Promociones!
+						</p>
+
+						<aside class="notes">
+							11:05<br>
+							Campañas márketing personalizadas?<br>
+							Falta información!<br>
+							Nueva Tarjeta con código de barras
+							<!-- Una vez tuvimos las finanzas y los aspectos más operativos controlados, decidimos que nuestro
+							siguiente objetivo era ganarnos al cliente. En ése momento nos dimos cuenta de que teníamos muy poca
+							información de nuestros consumidores. Si queríamos hacer mejoras como por ejemplo campañas de márketing
+							personalizadas a los gustos de los jugadores, necesitábamos saber qué es lo que más gustaba a cada
+							cliente. Para saberlo, introducimos una nueva versión de la tarjeta de jugador: en lugar de ser un simple
+							identificador de plástico con un nombre, la nueva tarjeta tenía un código de barras
+							que se tenía que marcar a cada compra, si es que se quería tener el descuento. De ésta manera, pudimos
+							registrar qué estaba comprando cada jugador, y pudimos enviar publicidad mucho más concreta: descuentos
+							en su juego favorito, promociones de productos similares que le pudieran gustar, etc. -->
+						</aside>
+					</section>
+
+					<section>
+						<h2>Analizando al cliente</h2>
+
+						<p>
+							Información es poder
+						</p>
+						<br>
+						<p class="fragment">
+							¡Retroalimentación!
+						</p>
+						<br>
+						<p class="fragment">
+							Información del SI se convierte en producto
+						</p>
+
+						<aside class="notes">
+							12:15<br>
+							Dónde funcionan mejor nuestros productos<br>
+							Falta de contacto con el cliente - Registrar torneos<br>
+							Información de los torneos pública -> nuevo producto, valor a partir de SI
+							<!-- Como estais empezando a ver, estábamos descubriendo que la información es poder, y se nos ocurrieron
+							nuevas maneras de aprovecharla: ahora podíamos identificar en qué zonas funcionaban mejor o peor nuestros
+							productos e intentar identificar el porqué. Y ahora os explicaremos uno de los grandes beneficios que nos
+							trajo el utilizar éstas técnicas de análisis de la información: Retroalimentación! Me explico:
+							de un tiempo a esta parte la empresa había crecido y nosotros habíamos perdido algo muy valioso que
+							antes podíamos ver en nuestra tiendecita de barrio: qué era lo que le gustaba a la gente. Qué aspectos de
+							nuestro juego les gustaban más y cuáles menos. Diseñar productos atractivos sin tener feedback es
+							muy complicado. Y os preguntaréis, y cómo lo solucionasteis? Debatimos varias maneras de hacerlo, pero
+							finalmente nos decantamos por registrar las listas de los productos que nuestros clientes utilizaban
+							en los torneos. De ésta manera, nos podíamos hacer una idea muy clara de qué gustaba y qué no, dando una
+							información valiosísima a nuestro equipo creativo.
+							Y por último, pero no por ello menos importante, decidimos hacer pública parte de ésta información que
+							recogíamos de los torneos, de manera que los jugadores mismos podían saber qué estrategia había vencido
+							en la tienda de la ciudad de al lado. Éste concepto tan sencillo tuvo una acogida genial entre los
+							jugadores y significó algo muy importante: estábamos haciendo que nuestro sistema de información
+							aportara valor en sí mismo.
+							-->
+						</aside>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Mejorando la persistencia</h2>
+
+						<aside class="notes">
+							14:40<br>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Base de datos</h2>
+						<h3>Según la RAE:</h3>
+
+						<p>
+							Conjunto de datos organizado de tal modo que permita obtener con rapidez diversos tipos de información.
+						</p>
+
+						<aside class="notes">
+							14:55<br>
+							Es un concepto muy bonito el de base de datos, al menos según la Real Academia de la Lengua Española.<br>
+							Nosotros disponíamos de un conjunto de datos, en cierta manera estaba organizado - a nuestra manera - y podíamos obtener con relativa rapidez diversos tipos de información. Técnicamnete lo estábamos haciendo bien... bueno, "técnicamente".<br>
+							"Técnicamente" es otro término interesante, pero no vamos a entrar en ello. La cuestión es que, nos estábamos ciñendo a la definición de base de datos, pero lo que teníamos era un desastre.<br>
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/excelLogo.png">
+
+						<aside class="notes">
+							15:30<br>
+							Comenzamos usando excel, era una manera muy fácil de mantener un estándar en cuanto a formato y enviárnoslo.
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/googleDocsLogo.png">
+
+						<aside class="notes">
+							15:40<br>
+							Luego con google docs, cosa que nos facilitó la compartición de los documentos y podíamos seguir manteniendo los formatos de excel que habíamos usado hasta el momento.
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/bbdd.png">
+
+						<aside class="notes">
+							15:50<br>
+							Además de nuestra pequeña base de datos relacional, no nos podemos olvidar de ella! La usábamos básicmanete para ventas y para el pequeño programa de gestión que usábamos.
+						</aside>
+					</section>
+
+					<section>
+						<h1>HECATOMBE<h1>
+						<aside class="notes">
+							16:00<br>
+							Básicamente, teníamos a nuestra plena disposición CAOS.<br>
+							-- Poner la pantalla en negro "b" --
+							Era el momento en que necesitábamos cambiar definitivamente. Ya no solo en cuanto a cómo almacenar los datos, pero era sin duda algo que nos estaba perjudicando.<br>
+							Estuvimos investigando, y descubrimos nuevas tecnologías que nos parecían de fantasía.<br>
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/mongoLogo.png">
+
+						<aside class="notes">
+							16:25<br>
+							Tras investigar decidimos que MongoDB - BBDD NoSQL Documental - era el modelo que más facilidades nos podía proporcionar tanto en el presente como en el futuro y es la que consideramos para el plan de acción de remodelar la estructura de datos.<br>
+						</aside>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Externalizando servicios</h2>
+
+						<aside class="notes">
+							16:50<br>
+							Nuestro SI era la crema: robusto, integrado, extensible... Disponíamos de un servicio master al que se le integraban componentes.<br>
+						</aside>
+					</section>
+
+					<section>
+						<h3>¡Montemos más máquinas!</h3>
+
+						<p>
+							¿Nuevo servicio? --> Nueva máquina ( física o virtualizada )
+						</p>
+
+						<aside class="notes">
+							17:20<br>
+							Con el afán de mantener la independéncia de servicios, cada nueva característica en nuestro sistema implicaba una máquina ( física o virtual ).<br>
+							Esto incrementaba el mantenimiento, reducía el rendimiento, necesitábamos un mayor control de nuestros procesos IT...<br>
+							Una fallada podía crear el caos en nuestros servicios.
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/cloud.png"><br>
+
+						<aside class="notes">
+							17:50<br>
+							Decidimos basar nuestro sistema en cloud, usando servicios externos para la gestión de estos.<br>
+							Esto nos permitía aumentar la disponibilidad de los servicios, evitar el mantenimiendo de las máquinas,
+							ganar seguridad en cuanto al mantenimiento de datos y aumentar nuestras posibilidades en general.
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/aws.png"><br>
+
+						<aside class="notes">
+							18:40<br>
+							EMpezamos a usar instancias de AWS. Con ello pagábamos por lo que realmente usábamos.<br>
+							En algún momento podíamos tener picos de visitas ( torneos, promociones... ) y nos convenía
+							disponer de un poco más de proceso de cálculo en esos momentos.
+						</aside>
+					</section>
+
+					<section>
+						<h2>El por qué de todo esto</h2>
+
+						<p>
+							Preparar el sistema a los nuevos métodos de acceso.
+						</p>
+
+						<aside class="notes">
+							19:40<br>
+							Es complicado mantener la disponibilidad de un sistema usando máquinas propias.<br>
+							Si planteamos crear una app móvil, es necesario tener los recursos siempre a mano para
+							poder trabajar con los datos.<br>
+							Si la idea es ampliar los picos de visita, debemos poder asegurar una velocidad constante así como
+							no dejar de aumentar funcionalidad.
+						</aside>
+					</section>
+
+					<section>
+						<h2>¿Cómo lo mejoramos?</h2>
+
+						<p class="fragment">
+							Reduciendo instancias.
+						</p>
+
+						<p class="fragment">
+							Creando servicios para integrar nuestro sistema con terceros.
+						</p>
+
+						<aside class="notes">
+							20:40<br>
+							Hasta ahora levantábamos instancias para cada servicio.<br>
+							No hubiese sido necesario si hubiesemos agrupado varios servicios en la misma instancia.<br>
+							La creación de APIs para que terceros integren sus sistemas con el nuestro ( eg. tiendas que organicen
+							eventos y necesiten nuestros datos de usuarios para registro o similar ).
+						</aside>
+					</section>
+				</section>
+
+				<!-- Eliminada por falta de tiempo -->
+				<!--
+				<section>
+					<section>
+						<h2>Renovar la Estrategia de Marketing</h2>
+						<h3 class="fragment"> Apostando por... </h3>
+
+						<aside class="notes">
+							23:50<br>
+							Nuestro marketing era pobre así que habia que renovarlo apostando por...
+						</aside>
+					</section>
+
+					<section>
+						<h2>¡Nuevas tecnologías!</h2>
+					</section>
+
+					<section>
+						<img class="no-background" width="300" height="300" src="img/mailchimp.png">
+
+						<aside class="notes">
+							24:30<br>
+							Creamos una Newsletter <br>
+							Personalizada al cliente. <br>
+							Novedades. <br>
+							Ofertas Especiales. <br>
+							Torneos. <br>
+							Mensual. <br>
+							Utilizamos MailChimp como cliente.
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/apple.png" width="115" height="150"> <br>
+						<img class="no-background" src="img/play.png" width="434" height="100">
+
+						<aside class="notes">
+							24:55<br>
+							Esta hecha pero no publicada!
+							<b>Punto de encuentro Empresa-Cliente</b> <br>
+							Perfil de jugador<br>
+								Nombre, Imagen, Nivel...<br>
+							Consultar puntos acumulados<br>
+							Consultar Novedades y Noticias<br>
+							Inscribirse en torneos<br>
+							Buscar amigos<br>
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/QR.jpg" width="275" height="275">
+
+						<aside class="notes">
+							25:15<br>
+							Se crean cuando esté publicada la App.<br>
+								Descargas de las Apps<br>
+								Login en torneos
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/facebookLogo.png" width="200" height="200">
+						<img class="no-background" src="img/twitterLogo.png" width="195" height="195">
+
+						<aside class="notes">
+							25:55<br>
+
+							<b> Objetivo: Aumentar los Prescriptores</b>
+								Contenido nuevo: <br>
+								Ofertas Relámpago<br>
+								Torneos y sus resultados<br>
+								Fotografías de los eventos<br>
+								Concursos<br>
+								Nuevos juegos<br>
+								Videos de muestra o tutoriales<br>
+								Novedades y Noticias<br>
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/communityManager.png">
+
+						<aside class="notes">
+							Para llevar las redes sociales de la empresa contrataremos un Community Manager.
+						</aside>
+					</section>
+
+				</section>
+				-->
+
+				<section>
+					<section>
+						<h2>Actualidad</h2>
+					</section>
+
+					<section>
+						<h2>Competencia</h2>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/devirLogo.jpg">
+
+						<aside class ="notes">
+							Creación y Venta de juegos de mesa<br>
+							Distribución a otras tiendas<br>
+							Tienda online<br>
+							<b>Web:</b> Productos, torneos, sitios donde aprender...<br>
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/wizardsOfTheCoastLogo.gif">
+
+						<aside class ="notes">
+							Creación y Venta de juegos de mesa y PC<br>
+							Distribución a otras tiendas<br>
+							<b>Web:</b> Productos, torneos, sitios donde aprender...<br>
+							<strong>Los jugadores tienen un perfil con nivel</strong><br>
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background"src="img/gigameshLogo.jpg">
+
+						<aside class ="notes">
+							Publicación de libros<br>
+							Tiendas propias con otros juegos<br>
+							Distribución a otras tiendas<br>
+							<b>Web:</b> Productos nuevos<br>
+						</aside>
+					</section>
+
+					<section>
+						<img class="no-background" src="img/gamesWorkshopLogo.png">
+
+						<aside class ="notes">
+							Creación y Venta de juegos de mesa y PC<br>
+							Tiendas físicas propias<br>
+							Distribución a otras tiendas<br>
+							<b>Web:</b> Enfocada a la venta directa<br>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Nuestras ventajas competitivas</h2>
+						<aside class="notes">
+							Nuestra ventaja competitiva principal es la <b>Tarjeta de Socio</b> y nuestro juego estrella <b>Requiem</b>
+							22:00
+						</aside>
+					</section>
 				</section>
 
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
+					<section>
+						<h2>La moraleja de todo esto</h2>
+
+						<aside class="notes">
+							22:15<br>
+							Veamos el detalle de hacer un sistema nuevo.<br>
+							A priori puede no tener sentido, pero realmente lo tiene:
+						</aside>
+					</section>
+
+					<section>
+						<h2>¿Qué sentido tiene?</h2>
+
+						<p>
+							¿Por qué externalizamos los servicios si luego hacemos esto?
+						</p>
+
+						<aside class="notes">
+							22:35<br>
+							Puede verse como algo estupido, el hecho de crear cosas que ya existen, aunque realmente no estamos copiando,
+							estamos haciendo algo nuevo: integrando todos los servicios en nuestro sistema.<br>
+							De esta manera controlamos todo el proceso.
+						</aside>
+					</section>
+
+					<section>
+						<h3>Alineación</h3>
+
+						<p>
+							Siempre se alinea la estrategia global con la tecnológica.
+						</p>
+
+						<p class="fragment">
+							¿Por qué no incluir en el paquete una estrategia paralela para el sistema de información a usar?
+						</p>
+
+						<aside class="notes">
+							23:00<br>
+							Para llegar al éxito debemos alinear estrategias... Pero siempre se da por hecho que la estrategia tecnológica
+							viene a ser implantar un sistema comprado. ¿Por qué no incluir en el paquete el hecho de crear un sistema, mas
+							aún sabiendo que es algo completamente nuevo?
+						</aside>
+					</section>
+
+					<section>
+						<h3>Problemas al reinventar la rueda</h3>
+
+						<p class="fragment">
+							Tiempo...
+						</p>
+
+						<p class="fragment">
+							No siempre disponemos de la funcionalidad adecuada cuando la necesitamos.
+						</p>
+
+						<p class="fragment">
+							¡Mantenimiento!
+						</p>
+
+						<aside class="notes">
+							23:45<br>
+							Esto no implica que no hayamos tenido problemas...<br>
+							Tiempo, funcionaldades no acabadas y mantenimiento.
+						</aside>
+					</section>
+
+					<section>
+						<h3>Beneficios de hacerlo</h3>
+
+						<p class="fragment">
+							Un sistema hecho a medida.
+						</p>
+
+						<p class="fragment">
+							El sistema crece cuando nuestras funciones creceen.
+						</p>
+
+						<p class="fragment">
+							Escalabilidad en el sistema con una integración sencilla.
+						</p>
+
+						<aside class="notes">
+							24:15<br>
+							No todo son problemas.
+							El usuario del sistema habla directamente con quien lo crea.<br>
+							Este crece cuando lo necesitamos.<br>
+							Lo integramos facilmente con cualquier funcionalidad, interna o externa.
+						</aside>
+					</section>
+
+					<section>
+						<h3>¿Siendo objetivos?</h3>
+
+						<p class="fragment">
+							No es precisamente fácil.
+						</p>
+
+						<p class="fragment">
+							Sale a cuenta.
+						</p>
+
+						<p class="fragment">
+							Podemos darnos a conocer presentando el sistema en este tipo de charlas.
+						</p>
+
+						<p class="fragment">
+							No desaprovechamos funcionalidad, lo que tenemos es porque lo necesitamos.
+						</p>
+
+						<aside class="notes">
+							25:00<br>
+							No es facil mantener un sistema.<br>
+							Pero si es beneficioso, en terminos de funcionalidad y monetarios.<br>
+							Nos conocen por hacer algo diferente.<br>
+							Aprovechamos TODO.
+						</aside>
+					</section>
 				</section>
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+				<section data-background="#8c4738">
+					<h2>¡Gracias!</h2>
+					<p><h3><font color="#1c2323">¿Preguntas?</font></h3></p>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
+					<aside class="notes">
+						25:40<br>
+					</aside>
 				</section>
-
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
